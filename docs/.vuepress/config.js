@@ -1,4 +1,4 @@
-// const htmlModules = require('./config/htmlModules.js');
+const htmlModules = require('./config/htmlModules.js');
 
 
 module.exports = {
@@ -23,8 +23,9 @@ module.exports = {
       {
         text: 'DevOps', items: [
           { text: 'Linux运维', link: '/pages/f93948/' },
-          { text: '容器化部署', link: '/DevOps/container/'},
-          { text: '持续集成', link: '/DevOps/ci/' },
+          { text: '数据库', link: '/pages/921ebd/'},
+          { text: '容器化部署', link: '/pages/72aff1/' },
+          { text: '常用组件', link: '/pages/b7c630/' },
         ]
       },
       {
@@ -96,7 +97,7 @@ module.exports = {
       createYear: 2022, // 博客创建年份
       copyrightInfo: 'Lao xu | MIT License', // 博客版权信息，支持a标签
     },
-    // htmlModules,
+    htmlModules,
   },
 
   // 插件
@@ -163,13 +164,13 @@ module.exports = {
   ],
 
   markdown: {
-    // lineNumbers: true,
-    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    lineNumbers: true,
+    extractHeaders: ['h1','h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
   // 监听文件变化并重新构建
   extraWatchFiles: [
     '.vuepress/config.js',
-    // '.vuepress/config/htmlModules.js',
+    '.vuepress/config/htmlModules.js',
   ]
 }
