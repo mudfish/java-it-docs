@@ -26,12 +26,13 @@ module.exports = {
           { text: '数据库', link: '/pages/921ebd/'},
           { text: '容器化部署', link: '/pages/72aff1/' },
           { text: '常用组件', link: '/pages/b7c630/' },
+          { text: '开发工具', link: '/pages/708e07/' },
         ]
       },
       {
         text: 'Java', items: [
           { text: 'Java核心', link: '/Java/core/' },
-          { text: 'Spring', link: '/Java/spring/' },
+          { text: 'Spring', link: '/pages/c1bbd9/' },
           { text: '微服务', link: '/Java/microservice/' },
           { text: '项目实战', link: '/Java/project/' },
         ],
