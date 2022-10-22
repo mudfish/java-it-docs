@@ -31,10 +31,10 @@ module.exports = {
       },
       {
         text: 'Java', items: [
-          { text: 'Java核心', link: '/Java/core/' },
+          { text: 'Java核心', link: '/pages/106ccb/' },
           { text: 'Spring', link: '/pages/c1bbd9/' },
           { text: '微服务', link: '/Java/microservice/' },
-          { text: '项目实战', link: '/Java/project/' },
+          { text: 'Java面试题', link: '/pages/f4491a/' },
         ],
       }
     ],
