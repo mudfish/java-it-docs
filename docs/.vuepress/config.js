@@ -3,8 +3,8 @@ const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
 
-  theme: 'vdoing', // 使用依赖包主题
-  // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
+  //theme: 'vdoing', // 使用依赖包主题
+  theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
 
   title: "Java技术文档",
   description: '一个基于VuePress的知识管理',
@@ -35,6 +35,11 @@ module.exports = {
           { text: 'Spring', link: '/pages/c1bbd9/' },
           { text: '微服务', link: '/Java/microservice/' },
           { text: 'Java面试题', link: '/pages/f4491a/' },
+        ],
+      },
+      {
+        text: 'Web开发', items: [
+          { text: 'Vue实战', link: '/pages/f1c5c3/' },
         ],
       }
     ],
