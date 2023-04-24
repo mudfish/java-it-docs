@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redis | Java技术文档</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/java-it-docs/img/favicon.ico">
+    <meta name="description" content="一个基于VuePress的知识管理">
+    <meta name="keywords" content="vuepress,theme,blog,vdoing">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/java-it-docs/assets/css/0.styles.7032feb5.css" as="style"><link rel="preload" href="/java-it-docs/assets/js/app.acdb7dd5.js" as="script"><link rel="preload" href="/java-it-docs/assets/js/2.a7754ad0.js" as="script"><link rel="preload" href="/java-it-docs/assets/js/3.fc9693d7.js" as="script"><link rel="preload" href="/java-it-docs/assets/js/22.cd6186fd.js" as="script"><link rel="prefetch" href="/java-it-docs/assets/js/10.12411284.js"><link rel="prefetch" href="/java-it-docs/assets/js/11.14f82df2.js"><link rel="prefetch" href="/java-it-docs/assets/js/12.2a984365.js"><link rel="prefetch" href="/java-it-docs/assets/js/13.f2d517d3.js"><link rel="prefetch" href="/java-it-docs/assets/js/14.13913274.js"><link rel="prefetch" href="/java-it-docs/assets/js/15.d81ec452.js"><link rel="prefetch" href="/java-it-docs/assets/js/16.eadc5e3c.js"><link rel="prefetch" href="/java-it-docs/assets/js/17.416a908a.js"><link rel="prefetch" href="/java-it-docs/assets/js/18.35b53c91.js"><link rel="prefetch" href="/java-it-docs/assets/js/19.b06cf435.js"><link rel="prefetch" href="/java-it-docs/assets/js/20.182555f4.js"><link rel="prefetch" href="/java-it-docs/assets/js/21.f3386015.js"><link rel="prefetch" href="/java-it-docs/assets/js/23.a3734b50.js"><link rel="prefetch" href="/java-it-docs/assets/js/24.840a2ffa.js"><link rel="prefetch" href="/java-it-docs/assets/js/25.1aff598b.js"><link rel="prefetch" href="/java-it-docs/assets/js/26.11b855b9.js"><link rel="prefetch" href="/java-it-docs/assets/js/27.9c02f53e.js"><link rel="prefetch" href="/java-it-docs/assets/js/28.e5de8071.js"><link rel="prefetch" href="/java-it-docs/assets/js/29.fe9d30cf.js"><link rel="prefetch" href="/java-it-docs/assets/js/30.a7daa4e7.js"><link rel="prefetch" href="/java-it-docs/assets/js/31.b00c90ce.js"><link rel="prefetch" href="/java-it-docs/assets/js/32.80c77abd.js"><link rel="prefetch" href="/java-it-docs/assets/js/33.237b6785.js"><link rel="prefetch" href="/java-it-docs/assets/js/34.50f7af36.js"><link rel="prefetch" href="/java-it-docs/assets/js/35.27f42f39.js"><link rel="prefetch" href="/java-it-docs/assets/js/36.6d79f68a.js"><link rel="prefetch" href="/java-it-docs/assets/js/37.b1697d3f.js"><link rel="prefetch" href="/java-it-docs/assets/js/4.61cfd49b.js"><link rel="prefetch" href="/java-it-docs/assets/js/5.fcae0562.js"><link rel="prefetch" href="/java-it-docs/assets/js/6.44f735af.js"><link rel="prefetch" href="/java-it-docs/assets/js/7.7a3451c1.js"><link rel="prefetch" href="/java-it-docs/assets/js/8.6622435d.js"><link rel="prefetch" href="/java-it-docs/assets/js/9.5a24d6d7.js">
+    <link rel="stylesheet" href="/java-it-docs/assets/css/0.styles.7032feb5.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/java-it-docs/" class="home-link router-link-active"><img src="/java-it-docs/img/logo.png" alt="Java技术文档" class="logo"> <span class="site-name can-hide">Java技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/java-it-docs/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DevOps" class="dropdown-title"><!----> <span class="title" style="display:;">DevOps</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/f93948/" class="nav-link">Linux运维</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/921ebd/" class="nav-link">数据库</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/72aff1/" class="nav-link">容器化部署</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/b7c630/" aria-current="page" class="nav-link router-link-exact-active router-link-active">常用组件</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/708e07/" class="nav-link">开发工具</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><!----> <span class="title" style="display:;">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/106ccb/" class="nav-link">Java核心</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/c1bbd9/" class="nav-link">Spring</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/Java/microservice/" class="nav-link">微服务</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/f4491a/" class="nav-link">Java面试题</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web开发" class="dropdown-title"><!----> <span class="title" style="display:;">Web开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/f1c5c3/" class="nav-link">Vue实战</a></li></ul></div></div> <a href="https://github.com/mudfish/java-it-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/java-it-docs/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DevOps" class="dropdown-title"><!----> <span class="title" style="display:;">DevOps</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/f93948/" class="nav-link">Linux运维</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/921ebd/" class="nav-link">数据库</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/72aff1/" class="nav-link">容器化部署</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/b7c630/" aria-current="page" class="nav-link router-link-exact-active router-link-active">常用组件</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/708e07/" class="nav-link">开发工具</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><!----> <span class="title" style="display:;">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/106ccb/" class="nav-link">Java核心</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/c1bbd9/" class="nav-link">Spring</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/Java/microservice/" class="nav-link">微服务</a></li><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/f4491a/" class="nav-link">Java面试题</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web开发" class="dropdown-title"><!----> <span class="title" style="display:;">Web开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java-it-docs/pages/f1c5c3/" class="nav-link">Vue实战</a></li></ul></div></div> <a href="https://github.com/mudfish/java-it-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Linux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-it-docs/pages/f93948/" class="sidebar-link">Linux基础</a></li><li><a href="/java-it-docs/pages/8e7d10/" class="sidebar-link">Shell脚本</a></li><li><a href="/java-it-docs/pages/c2fb36/" class="sidebar-link">Debain</a></li><li><a href="/java-it-docs/pages/2d7c3e/" class="sidebar-link">Centos</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数据库</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-it-docs/pages/921ebd/" class="sidebar-link">Mysql</a></li><li><a href="/java-it-docs/pages/24bc3a/" class="sidebar-link">Oracle</a></li><li><a href="/java-it-docs/pages/9744c0/" class="sidebar-link">Postgresql</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>容器化部署</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-it-docs/pages/72aff1/" class="sidebar-link">Docker</a></li><li><a href="/java-it-docs/pages/883222/" class="sidebar-link">K8S</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>常用组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-it-docs/pages/b7c630/" aria-current="page" class="active sidebar-link">Redis</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/java-it-docs/pages/b7c630/#客户端工具" class="sidebar-link">客户端工具</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level1"><a href="/java-it-docs/pages/b7c630/#安装部署" class="sidebar-link">安装部署</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/java-it-docs/pages/b7c630/#手动方式" class="sidebar-link">手动方式</a></li><li class="sidebar-sub-header level2"><a href="/java-it-docs/pages/b7c630/#docker-方式" class="sidebar-link">docker 方式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level1"><a href="/java-it-docs/pages/b7c630/#常用命令" class="sidebar-link">常用命令</a></li><li class="sidebar-sub-header level1"><a href="/java-it-docs/pages/b7c630/#最佳实践" class="sidebar-link">最佳实践</a></li><li class="sidebar-sub-header level1"><a href="/java-it-docs/pages/b7c630/#常用-redis-conf" class="sidebar-link">常用 redis.conf</a></li></ul></li></ul></li><li><a href="/java-it-docs/pages/de4102/" class="sidebar-link">Nginx</a></li><li><a href="/java-it-docs/pages/df8c84/" class="sidebar-link">MongoDB</a></li><li><a href="/java-it-docs/pages/9f54c0/" class="sidebar-link">Kafka</a></li><li><a href="/java-it-docs/pages/9ce477/" class="sidebar-link">mybatis-plus</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开发工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-it-docs/pages/708e07/" class="sidebar-link">虚拟机</a></li><li><a href="/java-it-docs/pages/bb175e/" class="sidebar-link">实用技巧</a></li><li><a href="/java-it-docs/pages/449335/" class="sidebar-link">GIT</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>计算机科学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-it-docs/pages/a329d1/" class="sidebar-link">计算机网络</a></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06970110><div class="articleInfo" data-v-06970110><ul class="breadcrumbs" data-v-06970110><li data-v-06970110><a href="/java-it-docs/" title="首页" class="iconfont icon-home router-link-active" data-v-06970110></a></li> <li data-v-06970110><span data-v-06970110>DevOps</span></li><li data-v-06970110><span data-v-06970110>常用组件</span></li></ul> <div class="info" data-v-06970110><div title="作者" class="author iconfont icon-touxiang" data-v-06970110><a href="https://github.com/mudfish" target="_blank" title="作者" class="beLink" data-v-06970110>laoxu</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06970110><a href="javascript:;" data-v-06970110>2022-08-05</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">Redis<!----></h1> <div class="page-slot page-slot-top">
+    <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
+    <style>
+      .page-wwads{
+        width:100%!important;
+        min-height: 0;
+        margin: 0;
+      }
+      .page-wwads .wwads-img img{
+        width:80px!important;
+      }
+      .page-wwads .wwads-poweredby{
+        width: 40px;
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+      }
+      .wwads-content .wwads-text, .page-wwads .wwads-text{
+        height: 100%;
+        padding-top: 5px;
+        display: block;
+      }
+  </style>
+  </div> <div class="theme-vdoing-content content__default"><h2 id="客户端工具"><a href="#客户端工具" class="header-anchor">#</a> 客户端工具</h2> <p>https://github.com/qishibo/AnotherRedisDesktopManager</p> <h1 id="安装部署"><a href="#安装部署" class="header-anchor">#</a> 安装部署</h1> <h2 id="手动方式"><a href="#手动方式" class="header-anchor">#</a> 手动方式</h2> <h2 id="docker-方式"><a href="#docker-方式" class="header-anchor">#</a> docker 方式</h2> <p>1.docker 拉取 redis 镜像
+// 这里我没有指定版本 就默认拉取最新的用的人最多的稳定版</p> <p>docker pull redis</p> <p>2.redis 配置目录创建与设置
+mkdir -p /mydata/redis/conf</p> <p>touch /mydata/redis/conf/redis.conf</p> <p>3.设置 redis 持久化 aof---选做
+echo &quot;appendonly yes&quot; &gt;&gt; /mydata/redis/conf/redis.conf</p> <p>4.docker 启动 redis
+docker run -p 6379:6379 --name redis -v /mydata/redis/data:/data -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf --restart=always --network common-network -d redis redis-server /etc/redis/redis.conf</p> <p>5.进入 redis 容器内部 进行查看或者操作
+docker exec -it redis /bin/bash 默认进入 data 文件夹</p> <p>cd /etc/redis/
+// 连接 redis</p> <p>docker exec -it redis redis-cli</p> <p>6.重启 redis
+docker restart redis</p> <p>7.设置 redis 跟随 docker 启动
+docker update redis --restart=always</p> <h1 id="常用命令"><a href="#常用命令" class="header-anchor">#</a> 常用命令</h1> <p><a href="https://www.redis.com.cn/commands.html" target="_blank" rel="noopener noreferrer">https://www.redis.com.cn/commands.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>redis-server -v 查看版本</li> <li>set/mset</li> <li>get/mget</li> <li>hset hget hdel 哈希操作</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>hset user:1 name jack age <span class="token number">20</span>
+hset user:2 name lucy age <span class="token number">12</span>
+hget user:1 name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>lpush 和 lrange 列表操作</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>lpush citys nj js shanghai hangzhou wuhan
+lpush citys nanchang
+LRANGE citys <span class="token number">0</span> <span class="token number">3</span>
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;nanchang&quot;</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">&quot;wuhan&quot;</span>
+<span class="token number">3</span><span class="token punctuation">)</span> <span class="token string">&quot;hangzhou&quot;</span>
+<span class="token number">4</span><span class="token punctuation">)</span> <span class="token string">&quot;shanghai&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>sadd、smembers、srem 集合操作</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>sadd fruit apple banana
+SMEMBERS fruit
+<span class="token number">1</span><span class="token punctuation">)</span> <span class="token string">&quot;banana&quot;</span>
+<span class="token number">2</span><span class="token punctuation">)</span> <span class="token string">&quot;apple&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>zadd、 zrang、zrem 有序集合，分数用于排序</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>zadd grade <span class="token number">60</span> jack <span class="token number">90</span> xiaoming
+ZRANGE grade <span class="token number">0</span> <span class="token number">1</span> withscores
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>禁用 keys *</li> <li>exists key 判断 key 是否存在</li> <li>incr key</li> <li>append key value 追加字符串</li> <li>strlen key 每个汉子占 3 个字节</li> <li></li></ul> <h1 id="最佳实践"><a href="#最佳实践" class="header-anchor">#</a> 最佳实践</h1> <ol><li>缩短键值对的存储长度；</li> <li>使用  lazy free（延迟删除）特性；</li> <li>设置键值的过期时间；</li> <li>禁用长耗时的查询命令；</li> <li>使用 slowlog 优化耗时命令；</li> <li>使用 Pipeline 批量操作数据；</li> <li>避免大量数据同时失效；</li> <li>客户端使用优化；</li> <li>限制 Redis 内存大小；</li> <li>使用物理机而非虚拟机安装 Redis 服务；</li> <li>检查数据持久化策略；</li> <li>禁用 THP 特性；</li> <li>使用分布式架构来增加读写速度。</li></ol> <p><a href="https://juejin.cn/post/6844904101151506446" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/6844904101151506446<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="常用-redis-conf"><a href="#常用-redis-conf" class="header-anchor">#</a> 常用 redis.conf</h1> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">bind</span> <span class="token number">127.0</span>.0.1 <span class="token comment"># 注释掉这部分，否则只能本地访问</span>
+<span class="token comment"># 默认redis不是以后台进程的方式启动，如果需要在后台运行，需要将这个值设置成yes</span>
+<span class="token comment"># 默认no，改为yes意为以守护进程方式启动，可后台运行，除非kill进程，改为yes会使配置文件方式启动redis失败</span>
+<span class="token comment"># 以后台方式启动的时候，redis会写入默认的进程文件/var/run/redis.pid</span>
+daemonize no
+
+<span class="token comment"># 默认yes，开启保护模式，限制为本地访问</span>
+protected-mode no
+
+<span class="token comment"># redis启动的进程路径</span>
+pidfile/var/run/redis.pid
+
+<span class="token comment"># 启动进程端口号，默认6379，可以改</span>
+port <span class="token number">6379</span>
+
+tcp-backlog <span class="token number">511</span>
+
+<span class="token comment"># 配置redis监听到的ip地址，可以是一个也可以多个，这里我注释掉了</span>
+<span class="token comment">#bind 127.0.0.110.254.3.42</span>
+
+<span class="token comment"># redis的sock路径</span>
+unixsocket/tmp/redis.sock
+unixsocketperm <span class="token number">755</span>
+
+<span class="token comment"># 超时时间</span>
+<span class="token function">timeout</span> <span class="token number">0</span>
+
+<span class="token comment">#指定TCP连接是否为长连接,&quot;侦探&quot;信号有server端维护。默认为0.表示禁用</span>
+tcp-keepalive <span class="token number">0</span>
+
+<span class="token comment"># 日志级别，log 等级分为4 级，debug,verbose,notice, 和warning。生产环境下一般开启notice</span>
+loglevel notice
+
+<span class="token comment"># 日志文件地址</span>
+logfile<span class="token string">&quot;/usr/local/redis/logs/redis.log&quot;</span>
+
+<span class="token comment"># 设置数据库的个数，可以使用SELECT 命令来切换数据库。默认使用的数据库是0号库。默认16个库</span>
+databases <span class="token number">16</span>
+
+<span class="token comment"># RDB方式的持久化是通过快照（snapshotting）完成的，当符合一定条件时Redis会自动将内存中的所有数据进行快照并存储在硬盘上。进行快照的条件可以由用户在配置文件中自定义，由两个参数构成：时间和改动的键的个数。当在指定的时间内被更改的键的个数大于指定的数值时就会进行快照。RDB是Redis默认采用的持久化方式，在配置文件中已经预置了3个条件：</span>
+save <span class="token number">900</span> <span class="token number">1</span>    <span class="token comment"># 900秒内有至少1个键被更改则进行快照</span>
+save <span class="token number">300</span> <span class="token number">10</span>   <span class="token comment"># 300秒内有至少10个键被更改则进行快照</span>
+save <span class="token number">60</span> <span class="token number">10000</span>  <span class="token comment"># 60秒内有至少10000个键被更改则进行快照</span>
+
+<span class="token comment"># 持久化数据存储目录</span>
+<span class="token function">dir</span> /usr/local/redis/data
+
+<span class="token comment"># 当持久化出现错误时，是否依然继续进行工作，是否终止所有的客户端write请求。默认设置&quot;yes&quot;表示终止，一旦snapshot数据保存故障，那么此server为只读服务。如果为&quot;no&quot;，那么此次snapshot将失败，但下一次snapshot不会受到影响，不过如果出现故障,数据只能恢复到&quot;最近一个成功点&quot;</span>
+stop-writes-on-bgsave-error no
+
+<span class="token comment"># 在进行数据镜像备份时，是否启用rdb文件压缩手段，默认为yes。压缩可能需要额外的cpu开支，不过这能够有效的减小rdb文件的大，有利于存储/备份/传输/数据恢复</span>
+rdbcompression <span class="token function">yes</span>
+
+<span class="token comment"># checksum文件检测，读取写入的时候rdb文件checksum，会损失一些性能</span>
+rdbchecksum <span class="token function">yes</span>
+
+<span class="token comment">#镜像备份文件的文件名，默认为dump.rdb</span>
+dbfilename dump.rdb
+
+<span class="token comment">#当主master服务器挂机或主从复制在进行时，是否依然可以允许客户访问可能过期的数据。在&quot;yes&quot;情况下,slave继续向客户端提供只读服务,有可能此时的数据已经过期；在&quot;no&quot;情况下，任何向此server发送的数据请求服务(包括客户端和此server的slave)都将被告知&quot;error&quot;</span>
+slave-serve-stale-data <span class="token function">yes</span>
+
+<span class="token comment"># 如果是slave库，只允许只读，不允许修改</span>
+slave-read-only <span class="token function">yes</span>
+
+<span class="token comment"># slave与master的连接,是否禁用TCPnodelay选项。&quot;yes&quot;表示禁用,那么socket通讯中数据将会以packet方式发送(packet大小受到socket buffer限制)。可以提高socket通讯的效率(tcp交互次数),但是小数据将会被buffer,不会被立即发送,对于接受者可能存在延迟。&quot;no&quot;表示开启tcp nodelay选项,任何数据都会被立即发送,及时性较好,但是效率较低，建议设为no，在高并发或者主从有大量操作的情况下，设置为yes</span>
+repl-disable-tcp-nodelay no
+
+<span class="token comment"># 适用Sentinel模块(unstable,M-S集群管理和监控),需要额外的配置文件支持。slave的权重值,默认100.当master失效后,Sentinel将会从slave列表中找到权重值最低(&gt;0)的slave,并提升为master。如果权重值为0,表示此slave为&quot;观察者&quot;,不参与master选举</span>
+slave-priority <span class="token number">100</span>
+
+<span class="token comment"># 限制同时连接的客户数量。当连接数超过这个值时，redis 将不再接收其他连接请求，客户端尝试连接时将收到error 信息。默认为10000，要考虑系统文件描述符限制，不宜过大，浪费文件描述符，具体多少根据具体情况而定</span>
+maxclients <span class="token number">10000</span>
+
+<span class="token comment"># redis-cache所能使用的最大内存(bytes),默认为0,表示&quot;无限制&quot;,最终由OS物理内存大小决定(如果物理内存不足,有可能会使用swap)。此值尽量不要超过机器的物理内存尺寸,从性能和实施的角度考虑,可以为物理内存3/4。此配置需要和&quot;maxmemory-policy&quot;配合使用,当redis中内存数据达到maxmemory时,触发&quot;清除策略&quot;。在&quot;内存不足&quot;时,任何write操作(比如set,lpush等)都会触发&quot;清除策略&quot;的执行。在实际环境中,建议redis的所有物理机器的硬件配置保持一致(内存一致),同时确保master/slave中&quot;maxmemory&quot;&quot;policy&quot;配置一致。</span>
+maxmemory <span class="token number">0</span>
+
+<span class="token comment"># 内存过期策略，内存不足&quot;时,数据清除策略,默认为&quot;volatile-lru&quot;。</span>
+<span class="token comment"># volatile-lru  -&gt;对&quot;过期集合&quot;中的数据采取LRU(近期最少使用)算法.如果对key使用&quot;expire&quot;指令指定了过期时间,那么此key将会被添加到&quot;过期集合&quot;中。将已经过期/LRU的数据优先移除.如果&quot;过期集合&quot;中全部移除仍不能满足内存需求,将OOM.</span>
+<span class="token comment"># allkeys-lru -&gt;对所有的数据,采用LRU算法</span>
+<span class="token comment"># volatile-random -&gt;对&quot;过期集合&quot;中的数据采取&quot;随即选取&quot;算法,并移除选中的K-V,直到&quot;内存足够&quot;为止. 如果如果&quot;过期集合&quot;中全部移除全部移除仍不能满足,将OOM</span>
+<span class="token comment"># allkeys-random -&gt;对所有的数据,采取&quot;随机选取&quot;算法,并移除选中的K-V,直到&quot;内存足够&quot;为止</span>
+<span class="token comment"># volatile-ttl -&gt;对&quot;过期集合&quot;中的数据采取TTL算法(最小存活时间),移除即将过期的数据.</span>
+<span class="token comment"># noeviction -&gt;不做任何干扰操作,直接返回OOM异常</span>
+<span class="token comment"># 另外，如果数据的过期不会对&quot;应用系统&quot;带来异常,且系统中write操作比较密集,建议采取&quot;allkeys-lru&quot;</span>
+maxmemory-policy volatile-lru
+
+<span class="token comment"># 默认值5，上面LRU和最小TTL策略并非严谨的策略，而是大约估算的方式，因此可以选择取样值以便检查</span>
+maxmemory-samples <span class="token number">5</span>
+
+<span class="token comment"># 默认情况下，redis 会在后台异步的把数据库镜像备份到磁盘，但是该备份是非常耗时的，而且备份也不能很频繁。所以redis 提供了另外一种更加高效的数据库备份及灾难恢复方式。开启append only 模式之后，redis 会把所接收到的每一次写操作请求都追加到appendonly.aof 文件中，当redis 重新启动时，会从该文件恢复出之前的状态。但是这样会造成appendonly.aof 文件过大，所以redis 还支持了BGREWRITEAOF 指令，对appendonly.aof 进行重新整理。如果不经常进行数据迁移操作，推荐生产环境下的做法为关闭镜像，开启appendonly.aof，同时可以选择在访问较少的时间每天对appendonly.aof 进行重写一次。</span>
+<span class="token comment"># 另外，对master机器,主要负责写，建议使用AOF,对于slave,主要负责读，挑选出1-2台开启AOF，其余的建议关闭</span>
+appendonly <span class="token function">yes</span>
+
+<span class="token comment"># aof文件名字，默认为appendonly.aof</span>
+appendfilename <span class="token string">&quot;appendonly.aof&quot;</span>
+
+<span class="token comment"># 设置对appendonly.aof 文件进行同步的频率。always表示每次有写操作都进行同步，everysec 表示对写操作进行累积，每秒同步一次。no不主动fsync，由OS自己来完成。这个需要根据实际业务场景进行配置</span>
+appendfsync everysec
+
+<span class="token comment"># 在aof rewrite期间,是否对aof新记录的append暂缓使用文件同步策略,主要考虑磁盘IO开支和请求阻塞时间。默认为no,表示&quot;不暂缓&quot;,新的aof记录仍然会被立即同步</span>
+no-appendfsync-on-rewrite no
+
+<span class="token comment"># 当Aof log增长超过指定比例时，重写logfile，设置为0表示不自动重写Aof 日志，重写是为了使aof体积保持最小，而确保保存最完整的数据。</span>
+auto-aof-rewrite-percentage <span class="token number">100</span>
+<span class="token comment"># 触发aof rewrite的最小文件尺寸</span>
+auto-aof-rewrite-min-size 64mb
+
+<span class="token comment"># lua脚本执行的最大时间，单位毫秒</span>
+lua-time-limit <span class="token number">5000</span>
+
+<span class="token comment"># 慢日志记录，单位微妙，10000就是10毫秒值，如果操作时间超过此值,将会把command信息&quot;记录&quot;起来.(内存,非文件)。其中&quot;操作时间&quot;不包括网络IO开支,只包括请求达到server后进行&quot;内存实施&quot;的时间.&quot;0&quot;表示记录全部操作</span>
+slowlog-log-slower-than <span class="token number">10000</span>
+
+<span class="token comment"># &quot;慢操作日志&quot;保留的最大条数,&quot;记录&quot;将会被队列化,如果超过了此长度,旧记录将会被移除。可以通过&quot;SLOWLOG&lt;subcommand&gt; args&quot;查看慢记录的信息(SLOWLOG get 10,SLOWLOG reset)</span>
+slowlog-max-len <span class="token number">128</span>
+notify-keyspace-events <span class="token string">&quot;&quot;</span>
+
+<span class="token comment"># hash类型的数据结构在编码上可以使用ziplist和hashtable。ziplist的特点就是文件存储(以及内存存储)所需的空间较小,在内容较小时,性能和hashtable几乎一样.因此redis对hash类型默认采取ziplist。如果hash中条目的条目个数或者value长度达到阀值,将会被重构为hashtable。</span>
+<span class="token comment"># 这个参数指的是ziplist中允许存储的最大条目个数，，默认为512，建议为128</span>
+hash-max-ziplist-entries <span class="token number">512</span>
+<span class="token comment"># ziplist中允许条目value值最大字节数，默认为64，建议为1024</span>
+hash-max-ziplist-value <span class="token number">64</span>
+
+<span class="token comment"># 同上</span>
+list-max-ziplist-entries <span class="token number">512</span>
+list-max-ziplist-value <span class="token number">64</span>
+
+<span class="token comment"># intset中允许保存的最大条目个数,如果达到阀值,intset将会被重构为hashtable</span>
+set-max-intset-entries <span class="token number">512</span>
+
+<span class="token comment"># zset为有序集合,有2中编码类型:ziplist,skiplist。因为&quot;排序&quot;将会消耗额外的性能,当zset中数据较多时,将会被重构为skiplist。</span>
+zset-max-ziplist-entries <span class="token number">128</span>
+<span class="token comment"># zset中允许条目value值最大字节数，默认为64，建议为1024</span>
+zset-max-ziplist-value <span class="token number">64</span>
+
+<span class="token comment"># 是否开启顶层数据结构的rehash功能,如果内存允许,请开启。rehash能够很大程度上提高K-V存取的效率</span>
+activerehashing <span class="token function">yes</span>
+
+<span class="token comment"># 客户端buffer控制。在客户端与server进行的交互中,每个连接都会与一个buffer关联,此buffer用来队列化等待被client接受的响应信息。如果client不能及时的消费响应信息,那么buffer将会被不断积压而给server带来内存压力.如果buffer中积压的数据达到阀值,将会导致连接被关闭,buffer被移除。</span>
+
+<span class="token comment"># buffer控制类型包括:normal -&gt; 普通连接；slave-&gt;与slave之间的连接；pubsub -&gt;pub/sub类型连接，此类型的连接，往往会产生此种问题;因为pub端会密集的发布消息,但是sub端可能消费不足.指令格式:client-output-buffer-limit &lt;class&gt; &lt;hard&gt;&lt;soft&gt;&lt;seconds&gt;&quot;,其中hard表示buffer最大值,一旦达到阀值将立即关闭连接;soft表示&quot;容忍值&quot;,它和seconds配合,如果buffer值超过soft且持续时间达到了seconds,也将立即关闭连接,如果超过了soft但是在seconds之后，buffer数据小于了soft,连接将会被保留.其中hard和soft都设置为0,则表示禁用buffer控制.通常hard值大于soft.</span>
+client-output-buffer-limitnormal <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span>
+client-output-buffer-limitslave 256mb 64mb <span class="token number">60</span>
+client-output-buffer-limitpubsub 32mb 8mb <span class="token number">60</span>
+
+<span class="token comment"># Redis server执行后台任务的频率,默认为10,此值越大表示redis对&quot;间歇性task&quot;的执行次数越频繁(次数/秒)。&quot;间歇性task&quot;包括&quot;过期集合&quot;检测、关闭&quot;空闲超时&quot;的连接等,此值必须大于0且小于500。此值过小就意味着更多的cpu周期消耗,后台task被轮询的次数更频繁。此值过大意味着&quot;内存敏感&quot;性较差。建议采用默认值。</span>
+hz <span class="token number">10</span>
+
+<span class="token comment"># 当一个child在重写AOF文件的时候，如果aof-rewrite-incremental-fsync值为yes生效，那么这个文件会以每次32M数据的来被同步，这大量新增提交到磁盘是有用的，并且能避免高峰延迟。</span>
+aof-rewrite-incremental-fsync <span class="token function">yes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br></div></div></div></div>  <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/11/23, 23:33:03</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/java-it-docs/pages/883222/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">K8S</div></a> <a href="/java-it-docs/pages/de4102/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Nginx</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/java-it-docs/pages/883222/" class="prev">K8S</a></span> <span class="next"><a href="/java-it-docs/pages/de4102/">Nginx</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:indexman@126.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/mudfish" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=13478485" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+    Copyright © 2022-2023
+    <span>Lao xu | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/java-it-docs/assets/js/app.acdb7dd5.js" defer></script><script src="/java-it-docs/assets/js/2.a7754ad0.js" defer></script><script src="/java-it-docs/assets/js/3.fc9693d7.js" defer></script><script src="/java-it-docs/assets/js/22.cd6186fd.js" defer></script>
+  </body>
+</html>
